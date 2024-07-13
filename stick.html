@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joystick</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="joystick-container">
+        <div class="joystick" id="joystick1"></div>
+    </div>
+    <div class="joystick-container">
+        <div class="joystick" id="joystick2"></div>
+    </div>
+    <p id="joystick1Value">Joystick 1: X=1500, Y=1500</p>
+    <br>
+    <p id="joystick2Value">Joystick 2: X=1500, Y=1500</p>
+   
+    <input type="checkbox" id="power"> Power
+    <p id="analogValueDisplay" style="position: absolute; top: 30px;">Battery:- </p>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
+
+    
+    <!-- <script src="FirebaseScript.js"></script> -->
+    <script src="script.js"></script>
+    <!-- <script src="serverSend.js"></script> -->
+</body>
+</html>
